@@ -1,0 +1,31 @@
+.body {
+    width: 100%;
+    height: calc(100% - 6rem);
+    padding-bottom: 1rem;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    position: relative;
+    float: left;
+
+    background-color: #303030;
+}
+
+.inner-container {
+    width: 100%;
+    height: auto;
+    max-width: 30rem;
+
+    margin-left: calc(50% - 15rem);
+
+    position: relative;
+}
+
+@media (max-width: 50rem) {
+    .inner-container {
+        width: 95%;
+        max-width: 95%;
+        margin-left: 2.5%;
+    }
+}

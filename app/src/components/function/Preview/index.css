@@ -1,0 +1,162 @@
+.preview {
+    width: 30rem;
+    height: 30rem;
+
+    position: relative;
+    float: left;
+
+    border-top: solid #404040 1px;
+    border-bottom: solid #404040 1px;
+}
+
+.preview-mobile {
+    z-index: 9 !important;
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+
+    z-index: 3;
+}
+
+.preview-rollback {
+    width: 2rem;
+    height: 2rem;
+
+    position: absolute;
+    top: 26rem;
+    left: calc(50% - 1.5rem);
+
+    color: #808080;
+    background-color: #404040;
+    border-radius: 50%;
+    border: solid 0.5rem #404040;
+
+    opacity: 0.75;
+
+    cursor: pointer;
+
+    z-index: 6;
+}
+
+.preview-filter {
+    width: 2rem;
+    height: 2rem;
+
+    position: absolute;
+    top: 26.5rem;
+    left: 1.5rem;
+
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    border: solid #404040 1px;
+    border-radius: 0.5rem;
+
+    z-index: 6;
+}
+
+.preview-filter-1 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.preview-filter-2 {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+.preview-filter-title {
+    width: auto;
+    height: calc(2rem + 2px);
+    padding: 0 0.75rem 0 1.75rem;
+
+    position: absolute;
+    top: 26.5rem;
+    left: 2.5rem;
+
+    color: #AAAAAA;
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    background-color: #202020;
+    border-radius: 0.5rem;
+
+    opacity: 0.85;
+
+    z-index: 5;
+}
+
+.preview-upload {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.5rem;
+
+    position: absolute;
+    top: 1.5rem;
+    left: calc(100% - 3.5rem);
+
+    color: #AAAAAA;
+    background-color: #202020;
+    border-radius: 0.5rem;
+
+    opacity: 0.85;
+}
+
+.preview-delete {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+
+    position: absolute;
+    top: 1.5rem;
+    left: calc(100% - 3.5rem);
+
+    object-fit: cover;
+
+    color: #808080;
+    background-color: #202020;
+    border-radius: 0.5rem;
+
+    opacity: 0.85;
+
+    z-index: 5;
+}
+
+@media (max-width: 50rem) {
+    .preview {
+        width: 100%;
+        max-width: 100%;
+
+        height: 90vw;
+        max-height: 90vw;
+    }
+
+    .preview-image {
+        width: 100%;
+        max-width: 100%;
+
+        height: 90vw;
+        max-height: 90vw;
+    }
+
+    .preview-rollback {
+        top: calc(90vw - 4.5rem);
+    }
+
+    .preview-filter {
+        top: calc(90vw - 3.75rem);
+    }
+
+    .preview-filter-title {
+        top: calc(90vw - 3.75rem);
+    }
+}

@@ -1,0 +1,200 @@
+.camera {
+    width: 100%;
+    height: calc(100% - 5rem + 2px);
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+
+    background-color: #202020;
+    opacity: 0.975;
+
+    z-index: 2;
+}
+
+.camera-post {
+    width: 30rem;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    position: relative;
+    float: left;
+
+    background-color: #202020;
+    border: solid #404040 1px;
+
+    cursor: pointer;
+}
+
+.camera-input {
+    width: 7rem;
+    height: 0.7rem;
+
+    color: white;
+    font-size: 0.6rem;
+    background: none;
+    border: none;
+    border-bottom: solid 0.1rem #404040;
+
+    outline: none;
+}
+
+.camera-webcam {
+    width: 30rem;
+    height: 30rem;
+
+    position: relative;
+    float: left;
+
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    border-top: solid #404040 1px;
+    border-bottom: solid #404040 1px;
+}
+
+.camera-shoot {
+    width: 2rem;
+    height: 2rem;
+
+    position: absolute;
+    top: 29.5rem;
+    left: calc(50% - 1.5rem);
+
+    background-color: #AAAAAA;
+    border-radius: 50%;
+    border: solid 0.5rem #404040;
+
+    opacity: 0.75;
+
+    cursor: pointer;
+
+    z-index: 9;
+}
+
+.camera-shoot:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.camera-shutter {
+    width: 30rem;
+    height: 30rem;
+    overflow: hidden;
+
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+
+    background-color: #606060;
+
+    opacity: 0;
+    -webkit-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+
+    z-index: 1;
+}
+
+.camera-shutter-on {
+    opacity: 1;
+    -webkit-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+}
+
+.camera-margin {
+    width: 100%;
+    height: 2rem;
+
+    position: relative;
+    float: left;
+
+    background-color: #272727;
+}
+
+.camera-icon {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+
+    position: relative;
+    float: left;
+
+    color: #505050;
+
+    cursor: pointer;
+}
+
+.camera-icon:nth-child(2) {
+    margin-left: calc(100% - 3rem);
+}
+
+.camera-icon:hover {
+    color: #808080;
+    transition: ease-in 0.25s;
+}
+
+/* .camera-icon-wide {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem calc(100% - 1.5rem) 0.5rem 0.5rem;
+
+    position: relative;
+    float: left;
+
+    color: #505050;
+
+    cursor: pointer;
+} */
+
+.camera-mobile-upload {
+    width: 5rem;
+    height: 5rem;
+    padding: 10rem;
+
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+
+    color: #808080;
+    background-color: #272727;
+    border-top: solid #404040 1px;
+    border-bottom: solid #404040 1px;
+
+    z-index: 3;
+}
+
+@media (max-width: 50rem) {
+    .camera-post {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .camera-webcam {
+        width: 100%;
+        max-width: 100%;
+
+        height: 90vw;
+        max-height: 90vw;
+    }
+
+    .camera-shoot {
+        top: calc(90vw - 1rem);
+    }
+
+    .camera-shutter {
+        width: 100%;
+        max-width: 100%;
+
+        height: 90vw;
+        max-height: 90vw;
+    }
+
+    .camera-mobile-upload {
+        padding: calc(45vw - 2.5rem) calc(50% - 2.5rem);
+    }
+}

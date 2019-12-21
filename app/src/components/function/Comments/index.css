@@ -1,0 +1,85 @@
+.comments {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    float: left;
+}
+
+.comments-container {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5rem;
+
+    position: relative;
+    float: left;
+
+    border-top: solid 1px #303030;
+}
+
+.comments-profile {
+    width: calc(1.8rem - 2px);
+    height: calc(1.8rem - 2px);
+    margin: 0 0.5rem;
+
+    position: relative;
+    float: left;
+
+    background-size: cover;
+    background-position: center;
+
+    border: solid 1px #404040;
+    border-radius: 50%;
+}
+
+.comments-content {
+    width: calc(100% - 4.05rem - 2px);
+    height: auto;
+    overflow: hidden;
+    resize: none;
+    min-height: 0.6rem;
+    padding: 0.4rem;
+    margin: 0 0 0.3rem 0;
+
+    position: relative;
+    float: left;
+
+    color: #909090;
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 0.8rem;
+
+    background-color: #272727;
+    border: none;
+    border-radius: 0.5rem;
+
+    outline: none;
+}
+
+.comment-nickname  {
+    width: calc(100% - 5.25rem);
+    height: 0.5rem;
+    margin: 0 0 0.5rem 3rem;
+
+    position: relative;
+    float: left;
+
+    color: #606060;
+    font-size: 0.5rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+}
+
+.comment-delete {
+    width: 2.25rem;
+    height: 0.5rem;
+    margin: 0 0 0.5rem 0;
+
+    position: relative;
+    float: left;
+
+    color: #606060;
+    font-size: 0.4rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+}
